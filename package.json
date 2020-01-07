@@ -1,0 +1,15 @@
+{
+  "name": "verida-schema",
+  "version": "0.0.1",
+  "description": "Verida Schemas",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verida/schemas.git"
+  },
+  "author": "Verida",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/verida/schemas/issues"
+  },
+  "homepage": "https://github.com/verida/schemas#readme"
+}
