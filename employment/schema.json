@@ -28,6 +28,7 @@
                     }
                 },
                 "startDate": {
+                    "title": "Start Date",
                     "type": "string",
                     "format": "date",
                     "attrs": {
@@ -36,6 +37,7 @@
                     }
                 },
                 "endDate": {
+                    "title": "End Date",
                     "type": "string",
                     "format": "date",
                     "attrs": {
