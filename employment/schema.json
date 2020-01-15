@@ -11,7 +11,7 @@
         {"$ref": "/schemas/base/schema.json"},
         {
             "properties": {
-                "organisationName": {
+                "name": {
                     "title": "Organisation Name",
                     "type": "string",
                     "attrs": {
@@ -44,7 +44,7 @@
                     }
                 }
             },
-            "required": ["organisationName", "position", "startDate", "endDate"]
+            "required": ["name", "position", "startDate", "endDate"]
         }
     ]
   }
