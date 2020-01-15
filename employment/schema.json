@@ -13,21 +13,35 @@
             "properties": {
                 "organisationName": {
                     "title": "Organisation Name",
-                    "type": "string"
+                    "type": "string",
+                    "attrs": {
+                        "title": "Organisation Name",
+                        "placeholder": "Organisation Name"
+                    }
                 },
                 "position": {
                     "title": "Position",
-                    "type": "string"
+                    "type": "string",
+                    "attrs": {
+                        "title": "Position",
+                        "placeholder": "Position"
+                    }
                 },
                 "startDate": {
-                    "title": "Start Date",
                     "type": "string",
-                    "format": "date"
+                    "format": "date",
+                    "attrs": {
+                        "title": "Start Date",
+                        "placeholder": "Start Date"
+                    }
                 },
                 "endDate": {
-                    "title": "End Date",
                     "type": "string",
-                    "format": "date"
+                    "format": "date",
+                    "attrs": {
+                        "title": "End Date",
+                        "placeholder": "End Date"
+                    }
                 }
             },
             "required": ["organisationName", "position", "startDate", "endDate"]
