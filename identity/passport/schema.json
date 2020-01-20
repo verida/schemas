@@ -4,6 +4,7 @@
   "title": "Passport",
   "description": "A passport document",
   "type": "object",
+  "color": "#F8A934",
   "allOf": [
     {"$ref": "base/schema.json"},
     {

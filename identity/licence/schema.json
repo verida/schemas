@@ -4,6 +4,7 @@
   "title": "Drivers Licence",
   "description": "An individual drivers licence",
   "type": "object",
+  "color": "#F8A934",
   "allOf": [
     {"$ref": "base/schema.json"},
     {

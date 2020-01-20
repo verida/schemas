@@ -4,6 +4,7 @@
     "title": "Employment",
     "description": "A record of employment at an organistion",
     "type": "object",
+    "color": "#F8A934",
     "database": {
         "name": "document"
     },
