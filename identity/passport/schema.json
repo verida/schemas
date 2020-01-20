@@ -5,6 +5,7 @@
   "description": "A passport document",
   "type": "object",
   "color": "#F8A934",
+  "icon": "icons/DriverLicense.svg",
   "allOf": [
     {"$ref": "base/schema.json"},
     {

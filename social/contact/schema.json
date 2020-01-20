@@ -4,7 +4,7 @@
     "title": "Contact",
     "description": "A record of a contact",
     "type": "object",
-    "color": "#F8A934",
+    "color": "#FD4F64",
     "database": {
         "name": "contact"
     },
