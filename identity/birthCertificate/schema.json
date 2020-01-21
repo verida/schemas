@@ -3,7 +3,6 @@
   "title": "Birth Certificate",
   "type": "object",
   "color": "#FD4F64",
-  "icon": "icons/DriverLicense.svg",
   "properties": {
     "firstName": {
       "title": "First Name",

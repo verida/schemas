@@ -1,10 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "/schemas/health/activity/schema.json",
+  "$id": "schemas/health/activity/schema.json",
   "title": "Activities",
   "description": "The specific type of the activity item",
   "type": "object",
-  "database": "health_activity",
+  "color": "#FD4F64",
+  "database": {
+    "name": "health_activity"
+  },
   "allOf": [
     {"$ref": "/schemas/base/schema.json"},
     {

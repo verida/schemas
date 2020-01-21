@@ -1,12 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "identity/licence/schema.json",
+  "$id": "schemas/identity/licence/schema.json",
   "title": "Drivers Licence",
   "description": "An individual drivers licence",
   "type": "object",
   "color": "#F8A934",
+  "database": {
+    "name": "document"
+  },
   "allOf": [
-    {"$ref": "base/schema.json"},
+    {"$ref": "/schemas/base/schema.json"},
     {
       "properties": {
         "firstName": {

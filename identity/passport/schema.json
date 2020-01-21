@@ -1,13 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "identity/passport/schema.json",
+  "$id": "schemas/identity/passport/schema.json",
   "title": "Passport",
   "description": "A passport document",
   "type": "object",
   "color": "#F8A934",
-  "icon": "icons/DriverLicense.svg",
+  "database": {
+    "name": "document"
+  },
   "allOf": [
-    {"$ref": "base/schema.json"},
+    {"$ref": "/schemas/base/schema.json"},
     {
       "properties": {
         "firstName": {
