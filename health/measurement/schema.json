@@ -21,9 +21,6 @@
           "minLength": 2,
           "maxLength": 60
         },
-        "metric": {
-          "$ref": "definitions/unit.json#/measure"
-        },
         "dateOfMeasurement": {
           "title": "Date of Measurement",
           "type": "string"

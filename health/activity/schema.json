@@ -12,9 +12,6 @@
     {"$ref": "/schemas/base/schema.json"},
     {
       "properties": {
-        "distance": {
-          "$ref":  "/schemas/definitions/unit.json#/measure"
-        },
         "img": {
           "type": "string"
         },
