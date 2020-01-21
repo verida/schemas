@@ -5,7 +5,6 @@
     "description": "A record of employment at an organistion",
     "type": "object",
     "color": "#F8A934",
-    "icon": "icons/DriverLicense.svg",
     "database": {
         "name": "document"
     },
