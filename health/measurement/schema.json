@@ -25,6 +25,22 @@
           "minLength": 2,
           "maxLength": 60
         },
+        "metricValue": {
+          "title": "Metric",
+          "type": "integer",
+          "minimum": 0.1,
+          "maximum": 10000
+        },
+        "metricUnit": {
+          "title": "Metric",
+          "type": "string",
+          "enum": [
+            "mi",
+            "km",
+            "cm",
+            "kg"
+          ]
+        },
         "dateOfMeasurement": {
           "title": "Date of Measurement",
           "type": "string",
