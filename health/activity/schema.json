@@ -25,9 +25,25 @@
           "minLength": 2,
           "maxLength": 60
         },
+        "distanceName": {
+          "title": "Distance",
+          "type": "integer",
+          "minimum": 0.1,
+          "maximum": 10000
+        },
+        "distanceUnit": {
+          "title": "Distance",
+          "type": "string",
+          "enum": [
+            "mi",
+            "km",
+            "cm",
+            "kg"
+          ]
+        },
         "cal": {
           "title": "Cal",
-          "type": "number"
+          "type": "integer"
         },
         "date": {
           "title": "Date",
