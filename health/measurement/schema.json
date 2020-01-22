@@ -13,7 +13,11 @@
     {
       "properties": {
         "img": {
-          "type": "string"
+          "type": "string",
+          "media": {
+            "contentEncoding": "base64",
+            "contentMediaType": "image/*"
+          }
         },
         "name": {
           "title": "Name",
