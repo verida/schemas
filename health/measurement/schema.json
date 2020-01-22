@@ -26,13 +26,13 @@
           "maxLength": 60
         },
         "metricValue": {
-          "title": "Metric",
+          "title": "Metric value",
           "type": "integer",
           "minimum": 0.1,
           "maximum": 10000
         },
         "metricUnit": {
-          "title": "Metric",
+          "title": "Unit of metric",
           "type": "string",
           "enum": [
             "mi",

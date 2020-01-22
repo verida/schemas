@@ -26,13 +26,13 @@
           "maxLength": 60
         },
         "distanceValue": {
-          "title": "Distance",
+          "title": "Distance value",
           "type": "integer",
           "minimum": 0.1,
           "maximum": 10000
         },
         "distanceUnit": {
-          "title": "Distance",
+          "title": "Unit of distance",
           "type": "string",
           "enum": [
             "mi",
