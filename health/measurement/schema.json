@@ -27,7 +27,8 @@
         },
         "dateOfMeasurement": {
           "title": "Date of Measurement",
-          "type": "string"
+          "type": "string",
+          "format": "date"
         }
       },
       "required": [

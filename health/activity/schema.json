@@ -31,7 +31,8 @@
         },
         "date": {
           "title": "Date",
-          "type": "string"
+          "type": "string",
+          "format": "date"
         }
       },
       "required": ["name", "distance", "cal", "date"]
