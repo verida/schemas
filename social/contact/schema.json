@@ -5,6 +5,7 @@
     "description": "A record of a contact",
     "type": "object",
     "color": "#FD4F64",
+    "primary": ["firstName", "lastName"],
     "database": {
         "name": "contact"
     },

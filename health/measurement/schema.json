@@ -5,6 +5,7 @@
   "description": "The specific type of the health item",
   "type": "object",
   "color": "#FD4F64",
+  "primary": ["name"],
   "database": {
     "name": "health_measurement"
   },
