@@ -70,7 +70,8 @@
         },
         "verifiedAt": {
           "title": "Verified at",
-          "type": "string"
+          "type": "string",
+          "format": "date"
         }
       },
       "required": ["firstName", "lastName", "gender", "passport", "countryOfOrigin", "residence"]
