@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "schemas/shopping/coupon/schema.json",
+    "title": "Coupon",
+    "type": "object",
+    "color": "#FD4F64",
+    "database": {
+      "name": "shopping_coupon"
+    },
+    "allOf": [
+      {"$ref": "/schemas/base/schema.json"},
+      {
+        "properties": {
+          "description": {
+            "title": "Description",
+            "description": "Unit price * Quantity"
+          },
+          "value": {
+              "title": "Value",
+              "type": "number"
+          },
+          "valueType": {
+              "title": "Value type",
+              "type": "string",
+              "enum": [
+                  "currency",
+                  "percent",
+                  "unit"
+              ]
+          },
+          "currency": {
+              "title": "Currency",
+              "type": "string"
+          },
+          "barcode": {
+              "title": "Barcode",
+              "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "description",
+          "barcode"
+        ]
+      }
+    ]
+  }

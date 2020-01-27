@@ -1,11 +1,11 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "schemas/receipt/schema.json",
+    "$id": "schemas/shopping/receipt/schema.json",
     "title": "Receipt",
     "type": "object",
     "color": "#FD4F64",
     "database": {
-      "name": "receipt"
+      "name": "shopping_receipt"
     },
     "allOf": [
       {"$ref": "/schemas/base/schema.json"},
