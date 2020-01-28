@@ -33,7 +33,7 @@
           "items": {
             "title": "Items",
             "type": "array",
-            "properties": {
+            "items": {
               "$ref": "/schemas/receipt/item/schema.json"
             }
           }
