@@ -15,10 +15,6 @@
             "title": "Item ID",
             "type": "string"
           },
-          "receiptId": {
-            "title": "Receipt ID",
-            "type": "string"
-          },
           "barcode": {
             "title": "Barcode",
             "type": "string"
