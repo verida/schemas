@@ -5,6 +5,14 @@
     "description": "A base schema",
     "type": "object",
     "properties": {
+        "name": {
+            "title": "Name",
+            "description": "Name of the item within card list and details",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
         "extras": {
             "title": "Extras",
             "description": "Object of extra data not defined in the schema",
