@@ -1,0 +1,58 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "schemas/receipt/schema.json",
+    "title": "Receipt",
+    "type": "object",
+    "color": "#FD4F64",
+    "database": {
+      "name": "receipt"
+    },
+    "allOf": [
+      {"$ref": "/schemas/base/schema.json"},
+      {
+        "properties": {
+          "totalAmount": {
+            "title": "Total Amount",
+            "description": "Unit price * Quantity"
+          },
+          "totalTax": {
+              "title": "Tax"
+          },
+          "totalDiscount": {
+              "title": "Discount"
+          },
+          "currency": {
+              "title": "Currency"
+          },
+          "transactionTimestamp": {
+            "title": "Transaction date/time",
+            "description": "Date/time this transaction occurred",
+            "type": "string",
+            "format": "date-time"
+          },
+          "items": {
+            "title": "Items",
+            "type": "array",
+            "properties": {
+              "schema": {
+                "title": "Schema",
+                "type": "string"
+              },
+              "itemId": {
+                "title": "Item ID",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "required": [
+          "name",
+          "totalAmount",
+          "totalTax",
+          "totalDiscount",
+          "currency",
+          "transactionTimestamp"
+        ]
+      }
+    ]
+  }

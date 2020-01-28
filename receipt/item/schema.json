@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "schemas/receipt/item/schema.json",
+    "title": "Receipt Item",
+    "type": "object",
+    "color": "#FD4F64",
+    "database": {
+      "name": "receipt_item"
+    },
+    "allOf": [
+      {"$ref": "/schemas/base/schema.json"},
+      {
+        "properties": {
+          "itemId": {
+            "title": "Item ID",
+            "type": "string"
+          },
+          "receiptId": {
+            "title": "Receipt ID",
+            "type": "string"
+          },
+          "barcode": {
+            "title": "Barcode",
+            "type": "string"
+          },
+          "quantity": {
+              "title": "Quantity"
+          },
+          "unitPrice": {
+              "title": "Price"
+          },
+          "totalAmount": {
+            "title": "Total Amount",
+            "description": "Unit price * Quantity"
+          },
+          "totalTax": {
+              "title": "Tax",
+              "description": "Total tax included in the total amount"
+          },
+          "totalDiscount": {
+              "title": "Discount",
+              "description": "Discount to be applied to total amount"
+          },
+          "currency": {
+              "title": "Currency"
+          }
+        },
+        "required": [
+          "name",
+          "quantity",
+          "price",
+          "currency",
+          "barcode"
+        ]
+      }
+    ]
+  }

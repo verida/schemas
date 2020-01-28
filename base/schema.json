@@ -8,10 +8,7 @@
         "name": {
             "title": "Name",
             "description": "Name of the item within card list and details",
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "type": "string"
         },
         "extras": {
             "title": "Extras",
