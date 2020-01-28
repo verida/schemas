@@ -34,14 +34,7 @@
             "title": "Items",
             "type": "array",
             "properties": {
-              "schema": {
-                "title": "Schema",
-                "type": "string"
-              },
-              "itemId": {
-                "title": "Item ID",
-                "type": "string"
-              }
+              "$ref": "/schemas/receipt/item/schema.json"
             }
           }
         },
