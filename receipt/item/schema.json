@@ -5,7 +5,7 @@
     "type": "object",
     "color": "#FD4F64",
     "database": {
-      "name": "receipt_item"
+      "name": "receipt/item"
     },
     "allOf": [
       {"$ref": "/schemas/base/schema.json"},
