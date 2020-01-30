@@ -30,18 +30,11 @@
             "type": "string",
             "format": "date-time"
           },
-          "items": {
+          "constituents": {
             "title": "Items",
             "type": "array",
-            "properties": {
-              "schema": {
-                "title": "Schema",
-                "type": "string"
-              },
-              "itemId": {
-                "title": "Item ID",
-                "type": "string"
-              }
+            "items": {
+              "$ref": "/schemas/receipt/item/schema.json"
             }
           }
         },
