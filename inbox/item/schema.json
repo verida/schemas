@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "schemas/inbox/item/schema.json",
+    "title": "Inbox Item",
+    "type": "object",
+    "color": "#FD4F64",
+    "database": {
+      "name": "inbox_item"
+    },
+    "allOf": [
+      {"$ref": "/schemas/base/schema.json"},
+      {
+        "properties": {
+          "type": {
+            "title": "Type"
+          },
+          "content": {
+            "title": "Content",
+            "type": "object"
+          }
+        },
+        "required": [
+          "content",
+          "type"
+        ]
+      }
+    ]
+  }
