@@ -34,7 +34,7 @@
             "title": "Items",
             "type": "array",
             "items": {
-              "type": "number"
+              "$ref": "/schemas/receipt/item/schema.json"
             }
           }
         },
