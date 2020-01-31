@@ -1,51 +1,52 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "schemas/shopping/receipt/schema.json",
-    "title": "Receipt",
-    "type": "object",
-    "color": "#FD4F64",
-    "database": {
-      "name": "shopping_receipt"
-    },
-    "allOf": [
-      {"$ref": "/schemas/base/schema.json"},
-      {
-        "properties": {
-          "totalAmount": {
-            "title": "Total Amount",
-            "description": "Unit price * Quantity"
-          },
-          "totalTax": {
-              "title": "Tax"
-          },
-          "totalDiscount": {
-              "title": "Discount"
-          },
-          "currency": {
-              "title": "Currency"
-          },
-          "transactionTimestamp": {
-            "title": "Transaction date/time",
-            "description": "Date/time this transaction occurred",
-            "type": "string",
-            "format": "date-time"
-          },
-          "constituents": {
-            "title": "Items",
-            "type": "array",
-            "items": {
-              "$ref": "/schemas/receipt/item/schema.json"
-            }
-          }
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/shopping/receipt/schema.json",
+  "title": "Receipt",
+  "type": "object",
+  "color": "#FD4F64",
+  "database": {
+    "name": "shopping_receipt"
+  },
+  "allOf": [
+    {"$ref": "/schemas/base/schema.json"},
+    {
+      "properties": {
+        "totalAmount": {
+          "title": "Total Amount",
+          "description": "Unit price * Quantity"
         },
-        "required": [
-          "name",
-          "totalAmount",
-          "totalTax",
-          "totalDiscount",
-          "currency",
-          "transactionTimestamp"
-        ]
-      }
-    ]
-  }
+        "totalTax": {
+          "title": "Tax"
+        },
+        "totalDiscount": {
+          "title": "Discount"
+        },
+        "currency": {
+          "title": "Currency"
+        },
+        "transactionTimestamp": {
+          "title": "Transaction date/time",
+          "description": "Date/time this transaction occurred",
+          "type": "string",
+          "format": "date-time"
+        },
+        "item": {
+          "title": "Items",
+          "type": "array",
+          "source": "receipt",
+          "items": {
+            "$ref": "/schemas/shopping/receipt/item/schema.json"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "totalAmount",
+        "totalTax",
+        "totalDiscount",
+        "currency",
+        "transactionTimestamp"
+      ]
+    }
+  ]
+}
