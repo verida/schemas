@@ -7,22 +7,14 @@
     "database": {
       "name": "inbox_item"
     },
-    "allOf": [
-      {"$ref": "/schemas/base/schema.json"},
-      {
-        "properties": {
-          "type": {
-            "title": "Type"
-          },
-          "content": {
-            "title": "Content",
-            "type": "object"
-          }
-        },
-        "required": [
-          "content",
-          "type"
-        ]
+    "properties": {
+      "content": {
+        "title": "Content",
+        "type": "object"
       }
+    },
+    "required": [
+      "content",
+      "type"
     ]
   }
