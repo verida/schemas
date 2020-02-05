@@ -11,6 +11,10 @@
     {"$ref": "/schemas/base/schema.json"},
     {
       "properties": {
+        "receiptId": {
+          "title": "Receipt ID",
+          "type": "string"
+        },
         "totalAmount": {
           "title": "Total Amount",
           "description": "Unit price * Quantity"
@@ -33,9 +37,10 @@
         "item": {
           "title": "Items",
           "type": "array",
-          "source": "receipt",
-          "items": {
-            "$ref": "/schemas/shopping/receipt/item/schema.json"
+          "relateMany": {
+            "schema": "/schemas/shopping/receipt/item/schema.json",
+            "parentAttribute": "receiptId",
+            "childAttribute": "receiptId"
           }
         }
       },

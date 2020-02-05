@@ -12,7 +12,11 @@
     {
       "properties": {
         "itemId": {
-          "title": "Item ID",
+          "title": "Receipt Item ID",
+          "type": "string"
+        },
+        "receiptId": {
+          "title": "Receipt ID"
           "type": "string"
         },
         "barcode": {
