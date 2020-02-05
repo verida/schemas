@@ -11,6 +11,10 @@
       "content": {
         "title": "Content",
         "type": "object"
+      },
+      "key": {
+        "title": "Public key",
+        "type": "string"
       }
     },
     "required": [
