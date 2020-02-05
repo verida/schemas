@@ -16,7 +16,7 @@
           "type": "string"
         },
         "receiptId": {
-          "title": "Receipt ID"
+          "title": "Receipt ID",
           "type": "string"
         },
         "barcode": {
