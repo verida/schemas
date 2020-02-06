@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "schemas/profile/private/schema.json",
+    "title": "Profile",
+    "description": "Private profile data for multiple profile schemas for a user",
+    "type": "object",
+    "database": {
+        "name": "profile_private",
+        "idFormat": "{{ model.type }}-{{ model.key }}"
+    },
+    "allOf": [
+        {"$ref": "/schemas/base/schema.json"},
+        {
+            "properties": {
+                "type": {
+                    "title": "Profile schema",
+                    "description": "Profile schema this answer belongs to",
+                    "type": "string"
+                },
+                "key": {
+                    "title": "Key",
+                    "type": "string"
+                },
+                "value": {
+                    "title": "Value",
+                    "type": "string"
+                }
+            },
+            "required": ["profileSchema", "key", "value"]
+        }
+    ]
+  }
