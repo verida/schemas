@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "schemas/inbox/permission/schema.json",
+    "title": "Message",
+    "description": "Permission request",
+    "type": "object",
+    "allOf": [
+        {"$ref": "/schemas/base/schema.json"},
+        {
+            "properties": {
+                "schema": {
+                    "title": "Schema",
+                    "description": "Schema being requested",
+                    "type": "string"
+                },
+                "filter": {
+                    "title": "Filter",
+                    "description": "Database filter to be applied to the schema",
+                    "type": "object"
+                }
+            },
+            "required": ["subject", "message"]
+        }
+    ]
+  }
