@@ -1,0 +1,80 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "schemas/identity/kyc/AU/basic/schema.json",
+    "title": "Australia: Basic KYC",
+    "type": "object",
+    "color": "#F8A934",
+    "database": {
+        "name": "document"
+    },
+    "allOf": [
+        {
+            "$ref": "/schemas/base/schema.json"
+        },
+        {
+            "properties": {
+                "firstName": {
+                    "title": "First Name",
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 60
+                },
+                "middleName": {
+                    "title": "Middle Name",
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 60
+                },
+                "lastName": {
+                    "title": "Last Name",
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 60
+                },
+                "gender": {
+                    "title": "Gender",
+                    "type": "string",
+                    "enum": [
+                        "Male",
+                        "Female"
+                    ]
+                },
+                "dateOfBirth": {
+                    "title": "Date of birth",
+                    "type": "string",
+                    "format": "date"
+                },
+                "streetAddress1": {
+                    "title": "Street address",
+                    "type": "string"
+                },
+                "streetAddress2": {
+                    "title": "Street address (2)",
+                    "type": "string"
+                },
+                "suburb": {
+                    "title": "Suburb",
+                    "type": "string"
+                },
+                "state": {
+                    "title": "State",
+                    "type": "string"
+                },
+                "postcode": {
+                    "title": "Postcode",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "firstName",
+                "lastName",
+                "gender",
+                "dateOfBirth",
+                "streetAddress1",
+                "suburb",
+                "state",
+                "postcde"
+            ]
+        }
+    ]
+}
