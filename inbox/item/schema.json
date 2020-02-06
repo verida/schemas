@@ -10,7 +10,7 @@
     "properties": {
       "content": {
         "title": "Content",
-        "type": "object"
+        "type": "string"
       },
       "key": {
         "title": "Public key",
@@ -19,6 +19,6 @@
     },
     "required": [
       "content",
-      "type"
+      "key"
     ]
   }
