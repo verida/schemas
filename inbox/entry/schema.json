@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "custom/inbox/entry/schema.json",
+    "title": "Message",
+    "description": "Inbox entry",
+    "type": "object",
+    "database": {
+        "name": "inbox_entry"
+    },
+    "allOf": [
+        {"$ref": "/schemas/base/schema.json"},
+        {
+            "properties": {
+                "message": {
+                    "title": "Message",
+                    "type": "string"
+                },
+                "sentAt": {
+                    "title": "Sent date/time",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "sentBy": {
+                    "properties": {
+                        "did": {
+                            "title": "DID",
+                            "type": "string",
+                        },
+                        "vid": {
+                            "title": "VID",
+                            "type": "string"
+                        },
+                        "name": {
+                            "title": "Name",
+                            "type": "string"
+                        }
+                    }
+                },
+                "data": {
+                    "title": "Data",
+                    "description": "Data attached to this inbox entry",
+                    "type": "object"
+                },
+                "read": {
+                    "type": "boolean"
+                }
+            },
+            "required": ["message", "sentAt"]
+        }
+    ]
+  }
