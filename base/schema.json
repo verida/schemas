@@ -29,18 +29,6 @@
                 }
             }
         },
-        "actions": {
-            "description": "Array of actions that can be performed on this data, as specified by a third party",
-            "type": "array",
-            "properties": {
-                "label": {
-                    "type": "string"
-                },
-                "uri": {
-                    "type": "string"
-                }
-            }
-        },
         "archived": {
             "title": "Archived",
             "description": "Is this record archived?",

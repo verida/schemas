@@ -32,15 +32,6 @@
                     "description": "Data attached to this inbox entry",
                     "type": "object"
                 },
-                "actions": {
-                    "title": "Actions",
-                    "description": "Actions that can be performed on this inbox entry",
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "$ref": "base/inbox/action.json"
-                    }
-                },
                 "sentAt": {
                     "title": "Sent date/time",
                     "type": "string",
