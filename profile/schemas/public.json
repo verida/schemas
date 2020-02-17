@@ -9,6 +9,10 @@
             "title": "Name",
             "type": "string"
         },
+        "employer": {
+            "title": "Employer",
+            "type": "string"
+        },
         "description": {
             "title": "Description",
             "type": "string"
