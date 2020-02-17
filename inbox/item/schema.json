@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "schemas/inbox/item/schema.json",
     "title": "Inbox Item",
-    "description": "An unprocessed, encrypted inbox item in a users public inbox"
+    "description": "An unprocessed, encrypted inbox item in a users public inbox",
     "type": "object",
     "color": "#FD4F64",
     "database": {
