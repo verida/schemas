@@ -21,10 +21,10 @@
                     "description": "Type of inbox entry",
                     "type": "string",
                     "enum": [
-                        "/schemas/base/inbox/type/dataRequest",
-                        "/schemas/base/inbox/type/dataSend",
-                        "/schemas/base/inbox/type/message",
-                        "/schemas/base/inbox/type/permissionRequest"
+                        "/schemas/inbox/type/dataRequest",
+                        "/schemas/inbox/type/dataSend",
+                        "/schemas/inbox/type/message",
+                        "/schemas/inbox/type/permissionRequest"
                     ]
                 },
                 "data": {
