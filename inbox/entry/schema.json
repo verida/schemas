@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "custom/inbox/entry/schema.json",
+    "$id": "base/inbox/entry/schema.json",
     "title": "Message",
-    "description": "Inbox entry",
+    "description": "Inbox entry for a user",
     "type": "object",
     "database": {
         "name": "inbox_entry"
@@ -13,7 +13,33 @@
             "properties": {
                 "message": {
                     "title": "Message",
-                    "type": "string"
+                    "type": "string",
+                    "description": "Message to display to the user for this inbox message"
+                },
+                "type": {
+                    "title": "Type",
+                    "description": "Type of inbox entry",
+                    "type": "string",
+                    "enum": [
+                        "/schemas/base/inbox/type/dataRequest",
+                        "/schemas/base/inbox/type/dataSend",
+                        "/schemas/base/inbox/type/message",
+                        "/schemas/base/inbox/type/permissionRequest"
+                    ]
+                },
+                "data": {
+                    "title": "Data",
+                    "description": "Data attached to this inbox entry",
+                    "type": "object"
+                },
+                "actions": {
+                    "title": "Actions",
+                    "description": "Actions that can be performed on this inbox entry",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "$ref": "base/inbox/action.json"
+                    }
                 },
                 "sentAt": {
                     "title": "Sent date/time",
@@ -36,16 +62,11 @@
                         }
                     }
                 },
-                "data": {
-                    "title": "Data",
-                    "description": "Data attached to this inbox entry",
-                    "type": "object"
-                },
                 "read": {
                     "type": "boolean"
                 }
             },
-            "required": ["message", "sentAt"]
+            "required": ["sentAt"]
         }
     ]
   }

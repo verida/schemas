@@ -11,9 +11,26 @@
         {"$ref": "/schemas/base/schema.json"},
         {
             "properties": {
+                "type": {
+                    "title": "Type",
+                    "description": "Type of inbox entry",
+                    "type": "string",
+                    "enum": [
+                        "/schemas/base/inbox/type/dataRequest",
+                        "/schemas/base/inbox/type/dataSend",
+                        "/schemas/base/inbox/type/message",
+                        "/schemas/base/inbox/type/permissionRequest"
+                    ]
+                },
+                "data": {
+                    "title": "Data",
+                    "description": "Data attached to this outbox entry",
+                    "type": "object"
+                },
                 "message": {
                     "title": "Message",
-                    "type": "string"
+                    "type": "string",
+                    "description": "Message to display to the user for this inbox message"
                 },
                 "sentAt": {
                     "title": "Sent date/time",
@@ -35,11 +52,6 @@
                             "type": "string"
                         }
                     }
-                },
-                "data": {
-                    "title": "Data",
-                    "description": "Data attached to this outbox entry",
-                    "type": "object"
                 }
             },
             "required": ["message", "sentAt"]

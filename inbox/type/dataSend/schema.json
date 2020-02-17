@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "base/inbox/type/dataSend/schema.json",
+    "title": "Data",
+    "description": "An inbox message sending data to a user",
+    "type": "object",
+    "properties": {
+        "data": {
+            "title": "Data",
+            "description": "Array of data being sent. Must be valid schema data.",
+            "type": "array"
+        }
+    },
+    "required": ["data"]
+  }
