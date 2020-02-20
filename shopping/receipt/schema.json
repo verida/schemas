@@ -39,7 +39,7 @@
           "type": "array",
           "relateMany": {
             "schema": "/schemas/shopping/receipt/item/schema.json",
-            "parentAttribute": "receiptId",
+            "parentAttribute": "_id",
             "childAttribute": "receiptId"
           }
         }
