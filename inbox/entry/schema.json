@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "base/inbox/entry/schema.json",
+    "title": "Message",
+    "description": "Inbox entry for a user",
+    "type": "object",
+    "database": {
+        "name": "inbox_entry"
+    },
+    "allOf": [
+        {"$ref": "/schemas/base/schema.json"},
+        {
+            "properties": {
+                "message": {
+                    "title": "Message",
+                    "type": "string",
+                    "description": "Message to display to the user for this inbox message"
+                },
+                "type": {
+                    "title": "Type",
+                    "description": "Type of inbox entry",
+                    "type": "string",
+                    "enum": [
+                        "/schemas/inbox/type/dataRequest",
+                        "/schemas/inbox/type/dataSend",
+                        "/schemas/inbox/type/message",
+                        "/schemas/inbox/type/permissionRequest"
+                    ]
+                },
+                "data": {
+                    "title": "Data",
+                    "description": "Data attached to this inbox entry",
+                    "type": "object"
+                },
+                "sentAt": {
+                    "title": "Sent date/time",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "sentBy": {
+                    "properties": {
+                        "did": {
+                            "title": "DID",
+                            "type": "string",
+                        },
+                        "vid": {
+                            "title": "VID",
+                            "type": "string"
+                        },
+                        "name": {
+                            "title": "Name",
+                            "type": "string"
+                        }
+                    }
+                },
+                "read": {
+                    "type": "boolean"
+                }
+            },
+            "required": ["sentAt"]
+        }
+    ]
+  }
