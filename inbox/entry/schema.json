@@ -18,14 +18,8 @@
                 },
                 "type": {
                     "title": "Type",
-                    "description": "Type of inbox entry",
-                    "type": "string",
-                    "enum": [
-                        "/schemas/inbox/type/dataRequest",
-                        "/schemas/inbox/type/dataSend",
-                        "/schemas/inbox/type/message",
-                        "/schemas/inbox/type/permissionRequest"
-                    ]
+                    "description": "Schema type of the inbox entry",
+                    "type": "string"
                 },
                 "data": {
                     "title": "Data",
