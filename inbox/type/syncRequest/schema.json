@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "schemas/inbox/type/syncRequest/schema.json",
+    "title": "Data",
+    "description": "An inbox message requesting to sync data for a user",
+    "type": "object",
+    "properties": {
+        "requests": {
+            "title": "Requests",
+            "description": "Data syncs being requested",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "schema": {
+                        "title": "Schema",
+                        "description": "Type of data being requested",
+                        "type": "string"
+                    },
+                    "filter": {
+                        "title": "Filter",
+                        "description": "Database filter the data must match",
+                        "type": "object",
+                        "default": {}
+                    },
+                    "syncType": {
+                        "title": "Sync type",
+                        "description": "Type of syncronisation from the context of the requesting application",
+                        "type": "string",
+                        "default": "no",
+                        "enum": ["push", "pull", "both"]
+                    },
+                    "syncKey": {
+                        "$ref": "/schemas/security/key/symmetric/schema.json"
+                    }
+                },
+                "required": ["schema", "syncType", "syncKey"]
+            }
+        },
+        "status": {
+            "title": "Status",
+            "type": "string",
+            "enum": ["accept", "reject"]
+        }
+    },
+    "required": ["message", "requests"]
+  }
