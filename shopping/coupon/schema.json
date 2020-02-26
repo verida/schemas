@@ -2,6 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "schemas/shopping/coupon/schema.json",
     "title": "Coupon",
+    "titlePlural": "Coupons",
     "type": "object",
     "color": "#FD4F64",
     "database": {
