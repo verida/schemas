@@ -5,7 +5,10 @@
     "description": "Inbox entry for a user",
     "type": "object",
     "database": {
-        "name": "inbox_entry"
+        "name": "inbox_entry",
+        "indexes": {
+            "sentAt": ["sentAt"]
+        }
     },
     "allOf": [
         {"$ref": "/schemas/base/schema.json"},
