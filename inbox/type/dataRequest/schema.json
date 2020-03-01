@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "schemas/inbox/type/dataRequest/schema.json",
+    "title": "Data",
+    "description": "An inbox message requesting specific data from a user",
+    "type": "object",
+    "properties": {
+        "requestSchema": {
+            "title": "Schema",
+            "description": "Type of data being requested",
+            "type": "string"
+        },
+        "filter": {
+            "title": "Filter",
+            "description": "Database filter the data must match",
+            "type": "object"
+        },
+        "status": {
+            "title": "Status",
+            "type": "string",
+            "enum": ["accept", "reject"]
+        }
+    },
+    "required": ["requestSchema"]
+  }
