@@ -15,6 +15,17 @@
             "description": "Database filter the data must match",
             "type": "object"
         },
+        "userSelect": {
+            "title": "User selects the data",
+            "description": "Should the user select the data to be returned?",
+            "type": "boolean",
+            "default": false
+        },
+        "userSelectLimit": {
+            "title": "User select limit",
+            "description": "Limit the number of data records the user can return",
+            "type": "integer"
+        },
         "status": {
             "title": "Status",
             "type": "string",
