@@ -1,7 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "schemas/health/note/schema.json",
-    "title": "Health Note",
+    "title": "Note",
+    "titlePlural": "Notes",
     "description": "A health note from a medical professional",
     "type": "object",
     "color": "#FD4F64",
