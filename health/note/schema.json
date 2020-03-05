@@ -20,7 +20,8 @@
           },
           "notes": {
             "title": "Notes",
-            "type": "string"
+            "type": "string",
+            "inputType": "textarea"
           },
           "date": {
             "title": "Date",

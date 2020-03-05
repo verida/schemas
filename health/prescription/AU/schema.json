@@ -13,9 +13,16 @@
       {"$ref": "/schemas/base/schema.json"},
       {
         "properties": {
+          "name": {
+            "title": "Subject",
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 60
+          },
           "notes": {
             "title": "Notes",
-            "type": "string"
+            "type": "string",
+            "inputType": "textarea"
           },
           "medication": {
               "title": "Medication",
