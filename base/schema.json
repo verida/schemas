@@ -39,21 +39,14 @@
             "description": "Schema used for this record",
             "type": "string"
         },
-        "verification": {
-            "description": "Verification details",
-            "properties": {
-                "verifiedBy": {
-                    "type": "string"
-                },
-                "verifiedAt": {
-                    "type": "string",
-                    "format": "date-time"
-                }
-            }
+        "signatures": {
+            "title": "Signatures",
+            "description": "Signatures verifying this data has been signed",
+            "type": "object"
         },
         "source": {
             "title": "Source",
-            "description": "Where this data was sourced from",
+            "description": "Name of the application this data was sourced from",
             "type": "string"
         },
         "insertedAt": {
