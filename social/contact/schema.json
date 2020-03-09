@@ -1,13 +1,13 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "schemas/social/contact/schema.json",
+    "$id": "/schemas/social/contact/schema.json",
     "title": "Contact",
     "titlePlural": "Contacts",
     "description": "A record of a contact",
     "type": "object",
     "color": "#FD4F64",
     "database": {
-        "name": "contact",
+        "name": "social_contact",
         "indexes": {
             "email": ["email"],
             "did": ["did"],
