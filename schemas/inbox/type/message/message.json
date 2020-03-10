@@ -1,7 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "schemas/inbox/message/schema.json",
+    "$id": "schemas/inbox/type/message/schema.json",
     "title": "Message",
+    "name": "inbox/type/message",
     "description": "Inbox message",
     "type": "object",
     "allOf": [

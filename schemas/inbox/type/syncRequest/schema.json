@@ -2,6 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "schemas/inbox/type/syncRequest/schema.json",
     "title": "Data",
+    "name": "inbox/type/syncRequest",
     "description": "An inbox message requesting to sync data for a user",
     "type": "object",
     "properties": {
