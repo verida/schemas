@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "schemas/profile/public/schema.json",
+    "$id": "/profile/public/schema.json",
+    "name": "profile/public",
     "title": "Profile",
     "description": "Public profile data for a user",
     "type": "object",
@@ -9,7 +10,7 @@
         "idFormat": "{{ model.key }}"
     },
     "allOf": [
-        {"$ref": "/schemas/base/schema.json"},
+        {"$ref": "/base/schema.json"},
         {
             "properties": {
                 "key": {

@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "schemas/identity/birthCertificate/schema.json",
+  "$id": "/identity/birthCertificate/schema.json",
+  "name": "identity/birthCertificate",
   "title": "Birth Certificate",
   "type": "object",
   "color": "#FD4F64",
@@ -8,7 +9,7 @@
     "name": "document"
   },
   "allOf": [
-    {"$ref": "/schemas/base/schema.json"},
+    {"$ref": "/base/schema.json"},
     {
       "properties": {
         "firstName": {

@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "schemas/profile/schemas/public.json",
+    "$id": "/profile/schemas/public.json",
     "title": "Profile",
     "description": "Public profile data for a user",
     "type": "object",

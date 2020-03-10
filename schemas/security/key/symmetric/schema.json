@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "schemas/security/key/symmetric/schema.json",
+    "$id": "/security/key/symmetric/schema.json",
+    "name": "security/key/symmetric",
     "title": "Data",
     "description": "A symmetric key",
     "type": "object",
@@ -8,7 +9,7 @@
         "key": {
             "title": "Key",
             "description": "Symmetric encryption key",
-            "type": "string",
+            "type": "string"
         },
         "type": {
             "title": "Type",

@@ -1,7 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "schemas/employment/schema.json",
+    "$id": "/employment/schema.json",
     "title": "Employment",
+    "name": "employment",
     "description": "A record of employment at an organistion",
     "type": "object",
     "color": "#F8A934",
@@ -9,7 +10,7 @@
         "name": "document"
     },
     "allOf": [
-        {"$ref": "/schemas/base/schema.json"},
+        {"$ref": "/base/schema.json"},
         {
             "properties": {
                 "name": {

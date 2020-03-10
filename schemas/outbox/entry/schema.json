@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "custom/outbox/item/schema.json",
+    "$id": "/outbox/item/schema.json",
+    "name": "outbox/item",
     "title": "Outbox Entry",
     "description": "Outbox entry",
     "type": "object",
@@ -8,7 +9,7 @@
         "name": "outbox_entry"
     },
     "allOf": [
-        {"$ref": "/schemas/base/schema.json"},
+        {"$ref": "/base/schema.json"},
         {
             "properties": {
                 "type": {
@@ -16,10 +17,10 @@
                     "description": "Type of inbox entry",
                     "type": "string",
                     "enum": [
-                        "/schemas/base/inbox/type/dataRequest",
-                        "/schemas/base/inbox/type/dataSend",
-                        "/schemas/base/inbox/type/message",
-                        "/schemas/base/inbox/type/permissionRequest"
+                        "/inbox/type/dataRequest",
+                        "/inbox/type/dataSend",
+                        "/inbox/type/message",
+                        "/inbox/type/permissionRequest"
                     ]
                 },
                 "data": {

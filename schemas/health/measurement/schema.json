@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "schemas/health/measurement/schema.json",
+  "$id": "/health/measurement/schema.json",
+  "name": "health/measurement",
   "title": "Measurement",
   "titlePlural": "Measurements",
   "description": "The specific type of the health item",
@@ -10,7 +11,7 @@
     "name": "health_measurement"
   },
   "allOf": [
-    {"$ref": "/schemas/base/schema.json"},
+    {"$ref": "/base/schema.json"},
     {
       "properties": {
         "img": {

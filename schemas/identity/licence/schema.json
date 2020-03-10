@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "schemas/identity/licence/schema.json",
+  "$id": "/identity/licence/schema.json",
+  "name": "identity/licence",
   "title": "Drivers Licence",
   "description": "An individual drivers licence",
   "type": "object",
@@ -9,7 +10,7 @@
     "name": "document"
   },
   "allOf": [
-    {"$ref": "/schemas/base/schema.json"},
+    {"$ref": "/base/schema.json"},
     {
       "properties": {
         "firstName": {

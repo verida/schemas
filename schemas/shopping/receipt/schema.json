@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "schemas/shopping/receipt/schema.json",
+  "$id": "/shopping/receipt/schema.json",
+  "$name": "shopping/receipt",
   "title": "Receipt",
   "titlePlural": "Receipts",
   "type": "object",
@@ -9,7 +10,7 @@
     "name": "shopping_receipt"
   },
   "allOf": [
-    {"$ref": "/schemas/base/schema.json"},
+    {"$ref": "/base/schema.json"},
     {
       "properties": {
         "receiptId": {

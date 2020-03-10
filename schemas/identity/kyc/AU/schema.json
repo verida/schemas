@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "schemas/identity/kyc/AU/basic/schema.json",
+    "$id": "/identity/kyc/AU/basic/schema.json",
+    "name": "identity/kyc/AU/basic",
     "title": "Australia: Basic KYC",
     "type": "object",
     "color": "#F8A934",
@@ -9,7 +10,7 @@
     },
     "allOf": [
         {
-            "$ref": "/schemas/base/schema.json"
+            "$ref": "/base/schema.json"
         },
         {
             "properties": {

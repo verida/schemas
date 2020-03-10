@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "/schemas/social/contact/schema.json",
+    "$id": "/social/contact/schema.json",
     "name": "social/contact",
     "title": "Contact",
     "titlePlural": "Contacts",
@@ -16,7 +16,7 @@
         }
     },
     "allOf": [
-        {"$ref": "/schemas/base/schema.json"},
+        {"$ref": "/base/schema.json"},
         {
             "properties": {
                 "firstName": {
