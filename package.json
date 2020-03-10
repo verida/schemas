@@ -6,10 +6,24 @@
     "type": "git",
     "url": "git+https://github.com/verida/schemas.git"
   },
+  "scripts": {
+    "server": "nodemon --exec babel-node server/server.js"
+  },
   "author": "Verida",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/verida/schemas/issues"
   },
-  "homepage": "https://github.com/verida/schemas#readme"
+  "homepage": "https://github.com/verida/schemas#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "nodemon": "^2.0.2"
+  }
 }
