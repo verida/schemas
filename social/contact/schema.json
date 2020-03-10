@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "/schemas/social/contact/schema.json",
+    "name": "social/contact",
     "title": "Contact",
     "titlePlural": "Contacts",
     "description": "A record of a contact",
