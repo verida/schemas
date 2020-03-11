@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "/shopping/receipt/schema.json",
-  "$name": "shopping/receipt",
+  "name": "shopping/receipt",
   "title": "Receipt",
   "titlePlural": "Receipts",
   "type": "object",

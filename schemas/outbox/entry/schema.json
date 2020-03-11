@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "/outbox/item/schema.json",
-    "name": "outbox/item",
+    "$id": "/outbox/entry/schema.json",
+    "name": "outbox/entry",
     "title": "Outbox Entry",
     "description": "Outbox entry",
     "type": "object",
@@ -42,7 +42,7 @@
                     "properties": {
                         "did": {
                             "title": "DID",
-                            "type": "string",
+                            "type": "string"
                         },
                         "vid": {
                             "title": "VID",
