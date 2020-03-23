@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "/identity/email/domain/schema.json",
+    "name": "identity/email/domain",
+    "title": "Identity: Email Domain",
+    "titlePlural": "Identity: Email Domain",
+    "type": "object",
+    "color": "#FD4F64",
+    "database": {
+        "name": "document"
+    },
+    "allOf": [
+        {"$ref": "../../../base/schema.json"},
+        {
+            "properties": {
+                "did": {
+                    "title": "DID",
+                    "description": "DID that this credential is linked to",
+                    "type": "string"
+                },
+                "domain": {
+                    "title": "Domain name",
+                    "description": "Full or partial domain. ie: gov.au",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "did", "domain"
+            ]
+        }
+    ]
+  }

@@ -39,7 +39,7 @@
                     "properties": {
                         "did": {
                             "title": "DID",
-                            "type": "string",
+                            "type": "string"
                         },
                         "vid": {
                             "title": "VID",
