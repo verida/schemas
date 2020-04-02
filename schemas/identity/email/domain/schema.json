@@ -7,10 +7,10 @@
     "type": "object",
     "color": "#FD4F64",
     "database": {
-        "name": "document"
+        "name": "credential"
     },
     "allOf": [
-        {"$ref": "../../../base/schema.json"},
+        {"$ref": "../../../credential/base/schema.json"},
         {
             "properties": {
                 "did": {
