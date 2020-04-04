@@ -15,13 +15,7 @@
                 "type": {
                     "title": "Type",
                     "description": "Type of inbox entry",
-                    "type": "string",
-                    "enum": [
-                        "/inbox/type/dataRequest",
-                        "/inbox/type/dataSend",
-                        "/inbox/type/message",
-                        "/inbox/type/permissionRequest"
-                    ]
+                    "type": "string"
                 },
                 "data": {
                     "title": "Data",
