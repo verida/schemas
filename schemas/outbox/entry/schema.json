@@ -27,11 +27,6 @@
                     "type": "string",
                     "description": "Message to display to the user for this inbox message"
                 },
-                "sentAt": {
-                    "title": "Sent date/time",
-                    "type": "string",
-                    "format": "date-time"
-                },
                 "sentTo": {
                     "properties": {
                         "did": {
@@ -49,7 +44,7 @@
                     }
                 }
             },
-            "required": ["message", "sentAt"]
+            "required": ["type", "data", "message", "sentTo"]
         }
     ]
   }
