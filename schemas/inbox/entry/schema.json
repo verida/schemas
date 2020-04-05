@@ -8,7 +8,7 @@
     "database": {
         "name": "inbox_entry",
         "indexes": {
-            "sentAt": ["sentAt"]
+            "insertedAt": ["insertedAt"]
         }
     },
     "allOf": [
@@ -30,11 +30,6 @@
                     "description": "Data attached to this inbox entry",
                     "type": "object"
                 },
-                "sentAt": {
-                    "title": "Sent date/time",
-                    "type": "string",
-                    "format": "date-time"
-                },
                 "sentBy": {
                     "properties": {
                         "did": {
@@ -55,7 +50,7 @@
                     "type": "boolean"
                 }
             },
-            "required": ["sentAt"]
+            "required": ["type", "sentBy"]
         }
     ]
   }

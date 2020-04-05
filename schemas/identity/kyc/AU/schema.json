@@ -74,7 +74,7 @@
                 "streetAddress1",
                 "suburb",
                 "state",
-                "postcde"
+                "postcode"
             ]
         }
     ]
