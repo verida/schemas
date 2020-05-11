@@ -9,33 +9,28 @@
     "database": {
         "name": "credential"
     },
-    "allOf": [
-        {"$ref": "../../../credential/base/schema.json"},
-        {
-            "properties": {
-                "fullName": {
-                    "title": "Full name",
-                    "type": "string"
-                },
-                "dateOfBirth": {
-                    "title": "Date of birth",
-                    "type": "string",
-                    "format": "date"
-                },
-                "healthNumber": {
-                    "title": "Health number",
-                    "type": "string"
-                },
-                "testTimestamp": {
-                    "title": "Test timestamp",
-                    "type": "string",
-                    "format": "datetime"
-                },
-                "testType": {
-                    "title": "Test type",
-                    "type": "string"
-                }
-            }
+    "properties": {
+        "fullName": {
+            "title": "Full name",
+            "type": "string"
+        },
+        "dateOfBirth": {
+            "title": "Date of birth",
+            "type": "string",
+            "format": "date"
+        },
+        "healthNumber": {
+            "title": "Health number",
+            "type": "string"
+        },
+        "testTimestamp": {
+            "title": "Test timestamp",
+            "type": "string",
+            "format": "date-time"
+        },
+        "testType": {
+            "title": "Test type",
+            "type": "string"
         }
-    ]
+    }
   }
