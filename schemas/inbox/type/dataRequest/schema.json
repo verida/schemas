@@ -24,7 +24,7 @@
         },
         "userSelectLimit": {
             "title": "User select limit",
-            "description": "Limit the number of data records the user can return",
+            "description": "Limit the number of data records the user can return. Limit is optional.",
             "type": "integer"
         },
         "status": {
