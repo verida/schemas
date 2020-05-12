@@ -8,7 +8,7 @@
     "database": {
         "name": "inbox_entry",
         "indexes": {
-            "insertedAt": ["insertedAt"]
+            "sentAt": ["sentAt"]
         }
     },
     "allOf": [
@@ -24,6 +24,11 @@
                     "title": "Type",
                     "description": "Schema type of the inbox entry",
                     "type": "string"
+                },
+                "sentAt": {
+                    "title": "Sent date/time",
+                    "type": "string",
+                    "format": "date-time"
                 },
                 "data": {
                     "title": "Data",
