@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "/health/fhir/4.0.1/Patient",
+  "title": "Patient",
+  "name": "health/fhir/4.0.1/Patient",
+  "description": "A FHIR Patient",
+  "database": {
+      "name": "health_patient"
+  },
+  "type": "object",
+  "allOf": [
+      {"$ref": "https://schemas.verida.io/base/schema.json"},
+      {"$ref": "https://schemas.verida.io/health/fhir/4.0.1/schema.json#/definitions/Patient"},
+      {
+        "properties": {
+          "ResourceType": {
+            "const": "Patient"
+          }
+        }
+      }
+  ]
+}
