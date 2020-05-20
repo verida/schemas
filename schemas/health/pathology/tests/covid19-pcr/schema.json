@@ -9,9 +9,9 @@
         "name": "credential"
     },
     "allOf": [
-        {"$ref": "../../../../base/schema.json"},
-        {"$ref": "../../../../credential/base/schema.json"},
-        {"$ref": "../../identifiable/schema.json"},
+        {"$ref": "/base/schema.json"},
+        {"$ref": "/credential/base/schema.json"},
+        {"$ref": "/health/pathology/identifiable/schema.json"},
         {
             "properties": {
                 "testType": {
