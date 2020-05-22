@@ -1,8 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "/base/schema.json",
+    "$id": "https://schemas.verida.io/base/schema.json",
     "title": "Base schema",
-    "name": "base",
     "description": "A base schema",
     "type": "object",
     "properties": {
@@ -10,25 +9,6 @@
             "title": "Name",
             "description": "Name of the item within card list and details",
             "type": "string"
-        },
-        "extras": {
-            "title": "Extras",
-            "description": "Object of extra data not defined in the schema",
-            "type": "object"
-        },
-        "proof": {
-            "description": "Object of extra data not defined in the schema",
-            "type": "object",
-            "properties": {
-                "didJwt": {
-                    "description": "Signed JWT supplied when this object was created",
-                    "type": "object"
-                },
-                "transaction": {
-                    "description": "URI for a blockchain transaction containin a hash of the JWT for independent verification of the data",
-                    "type": "string"
-                }
-            }
         },
         "archived": {
             "title": "Archived",
@@ -45,8 +25,8 @@
             "description": "Signatures verifying this data has been signed",
             "type": "object"
         },
-        "source": {
-            "title": "Source",
+        "sourceApplication": {
+            "title": "Source application",
             "description": "Name of the application this data was sourced from",
             "type": "string"
         },
