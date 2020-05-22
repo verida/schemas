@@ -15,7 +15,10 @@
           "ResourceType": {
             "const": "Patient"
           }
-        }
+        },
+        "required": [
+          "name", "gender", "birthDate", "generalPractioner"
+        ]
       }
   ]
 }
