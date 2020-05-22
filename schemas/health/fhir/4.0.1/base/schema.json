@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://schemas.verida.io/health/fhir/4.0.1/base/schema.json",
+    "title": "Base schema",
+    "description": "A base schema",
+    "type": "object",
+    "properties": {
+        "displayName": {
+            "title": "Name",
+            "description": "Name of this item",
+            "type": "string"
+        },
+        "archived": {
+            "title": "Archived",
+            "description": "Is this record archived?",
+            "type": "boolean"
+        },
+        "schema": {
+            "title": "Schema",
+            "description": "Schema used for this record",
+            "type": "string"
+        },
+        "signatures": {
+            "title": "Signatures",
+            "description": "Signatures verifying this data has been signed",
+            "type": "object"
+        },
+        "sourceApplication": {
+            "title": "Source application",
+            "description": "Name of the application this data was sourced from",
+            "type": "string"
+        },
+        "insertedAt": {
+            "title": "Inserted",
+            "description": "Date/time this record was inserted",
+            "type": "string",
+            "format": "date-time"
+        },
+        "modifiedAt": {
+            "title": "Modified",
+            "description": "Date/time this record was modified",
+            "type": "string",
+            "format": "date-time"
+        }
+    }
+}
