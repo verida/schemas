@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://schemas.verida.io/storage/database/schema.json",
+    "title": "Database schema",
+    "description": "A database instance belonging to the current application",
+    "database": {
+        "name": "storage_database"
+    },
+    "type": "object",
+    "allOf": [
+        {"$ref": "https://schemas.verida.io/base/schema.json"},
+        {
+            "properties": {
+                "dbName": {
+                    "title": "Database name",
+                    "type": "string"
+                },
+                "did": {
+                    "title": "DID that owns the database",
+                    "type": "string"
+                },
+                "applicationName": {
+                    "title": "Application name",
+                    "type": "string"
+                },
+                "permissions": {
+                    "object": "Permissions",
+                    "type": "object"
+                },
+                "encryptionKey": {
+                    "$ref": "https://schemas.verida.io/security/key/symmetric/schema.json"
+                }
+            }
+        }
+    ],
+    "required": ["dbName", "did", "applicationName", "permissions"]
+  }
