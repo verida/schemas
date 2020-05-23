@@ -17,7 +17,7 @@
           }
         },
         "required": [
-          "name", "gender", "birthDate", "generalPractioner"
+          "name", "gender", "birthDate", "generalPractitioner"
         ]
       }
   ]
