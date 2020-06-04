@@ -20,7 +20,7 @@
             }
           },
           "required": [
-              "status", "class", "serviceType", "subject", "participant", "period"
+              "status", "serviceType", "subject", "participant", "period"
           ]
         }
     ]
