@@ -4,7 +4,10 @@
     "title": "Encounter",
     "description": "A FHIR Encounter",
     "database": {
-        "name": "health_encounter"
+        "name": "health_encounter",
+        "indexes": {
+          "period.start": ["period.start"]
+        }
     },
     "type": "object",
     "allOf": [

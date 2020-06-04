@@ -17,7 +17,7 @@
             }
           },
           "required": [
-              "status", "subject", "summary"
+              "status", "subject", "summary", "encounter"
           ]
         }
     ]
