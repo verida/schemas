@@ -15,8 +15,11 @@
         {"$ref": "https://schemas.verida.io/health/fhir/4.0.1/schema.json#/definitions/Encounter"},
         {
           "properties": {
-            "ResourceType": {
+            "resourceType": {
               "const": "Encounter"
+            },
+            "serviceType": {
+              "default": "General Practice"
             }
           },
           "required": [

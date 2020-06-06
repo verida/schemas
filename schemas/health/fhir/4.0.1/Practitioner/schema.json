@@ -12,8 +12,11 @@
         {"$ref": "https://schemas.verida.io/health/fhir/4.0.1/schema.json#/definitions/Practitioner"},
         {
           "properties": {
-            "ResourceType": {
+            "resourceType": {
               "const": "Practitioner"
+            },
+            "code": {
+              "default": "doctor"
             }
           },
           "required": [
