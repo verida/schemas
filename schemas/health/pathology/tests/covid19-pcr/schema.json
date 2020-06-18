@@ -1,7 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "/health/pathology/tests/covid19-pcr.json",
-    "name": "health/pathology/tests/covid19-pcr",
+    "$id": "https://schemas.verida.io/health/pathology/tests/covid19-pcr/schema.json",
     "title": "COVID19 PCR Test",
     "titlePlural": "COVID19 PCR Tests",
     "type": "object",
@@ -9,9 +8,9 @@
         "name": "credential"
     },
     "allOf": [
-        {"$ref": "/base/schema.json"},
-        {"$ref": "/credential/base/schema.json"},
-        {"$ref": "/health/pathology/identifiable/schema.json"},
+        {"$ref": "https://schemas.verida.io/base/schema.json"},
+        {"$ref": "https://schemas.verida.io/credential/base/schema.json"},
+        {"$ref": "https://schemas.verida.io/health/pathology/identifiable/schema.json"},
         {
             "properties": {
                 "testType": {
