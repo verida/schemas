@@ -8,7 +8,7 @@
     "properties": {
         "key": {
             "title": "Key",
-            "description": "Symmetric encryption key",
+            "description": "Symmetric encryption key as a hex string",
             "type": "string"
         },
         "type": {

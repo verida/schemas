@@ -1,0 +1,66 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "/storage/sync/schema.json",
+    "title": "Sync between two databases",
+    "name": "storage/sync",
+    "description": "A database sync",
+    "database": {
+        "name": "storage_sync"
+    },
+    "type": "object",
+    "allOf": [
+        {"$ref": "/base/schema.json"},
+        {
+            "properties": {
+                "externalDbName": {
+                    "title": "External database name",
+                    "type": "string"
+                },
+                "externalDid": {
+                    "title": "External DID",
+                    "type": "string"
+                },
+                "externalApplicationName": {
+                    "title": "External application name",
+                    "type": "string"
+                },
+                "externalKey": {
+                    "title": "External key",
+                    "type": "string"
+                },
+                "externalKeyType": {
+                    "title": "External key type",
+                    "type": "string"
+                },
+                "destinationDbName": {
+                    "title": "Destination database name",
+                    "type": "string"
+                },
+                "schemas": {
+                    "title": "Schemas to sync",
+                    "type": "string"
+                },
+                "filter": {
+                    "title": "Filter",
+                    "description": "Database filter the data must match",
+                    "type": "object",
+                    "default": {}
+                },
+                "syncType": {
+                    "title": "Sync type",
+                    "description": "Type of syncronisation from the context of the user's current application. ie: Push means pushing data from this application to an exteernal application.",
+                    "type": "string",
+                    "enum": ["pull", "push"],
+                    "default": "pull"
+                },
+                "frequency": {
+                    "title": "Sync frequency",
+                    "description": "How often to sync the databases (in minutes). 0 = live. Default = 60 minutes",
+                    "type": "number",
+                    "default": 60
+                }
+            }
+        }
+    ],
+    "required": ["sourceDb", "destinationDb", "syncType"]
+  }
