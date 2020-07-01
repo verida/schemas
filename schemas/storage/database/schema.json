@@ -24,6 +24,7 @@
                     "type": "string"
                 },
                 "permissions": {
+                    "title": "Permissions",
                     "object": "Permissions",
                     "type": "object"
                 },
