@@ -17,19 +17,7 @@
             "title": "Date of birth",
             "type": "string",
             "format": "date"
-        },
-        "healthNumber": {
-            "title": "Health number",
-            "type": "string"
-        },
-        "testTimestamp": {
-            "title": "Test timestamp",
-            "type": "string",
-            "format": "date-time"
-        },
-        "testType": {
-            "title": "Test type",
-            "type": "string"
         }
-    }
+    },
+    "required": ["fullName", "dateOfBirth"]
   }

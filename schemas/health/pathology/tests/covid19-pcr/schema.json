@@ -11,8 +11,6 @@
         "view": [
             "fullName",
             "dateOfBirth",
-            "testTimestamp",
-            "testType",
             "testResult"
         ]
     },
@@ -22,14 +20,10 @@
         {"$ref": "https://schemas.verida.io/health/pathology/identifiable/schema.json"},
         {
             "properties": {
-                "testType": {
-                    "enum": ["covid19-pcr"],
-                    "const": "covid19-pcr"
-                },
                 "testResult": {
                     "title": "Test result",
                     "type": "string",
-                    "enum": ["positive", "negative"]
+                    "enum": ["Positive", "Negative"]
                 }
             }
         }
