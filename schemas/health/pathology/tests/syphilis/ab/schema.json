@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://schemas.verida.io/health/pathology/tests/covid19-pcr/schema.json",
-    "title": "COVID19 PCR Test",
-    "titlePlural": "COVID19 PCR Tests",
+    "$id": "https://schemas.verida.io/health/pathology/tests/syphilis/ab/schema.json",
+    "title": "Syphilis (AB) Test",
+    "titlePlural": "Syphilis (AB) Tests",
     "type": "object",
     "database": {
         "name": "credential"
@@ -11,7 +11,8 @@
         "view": [
             "fullName",
             "dateOfBirth",
-            "testResult"
+            "testTimestap",
+            "result"
         ]
     },
     "allOf": [
@@ -20,10 +21,10 @@
         {"$ref": "https://schemas.verida.io/health/pathology/identifiable/schema.json"},
         {
             "properties": {
-                "testResult": {
-                    "title": "Test result",
+                "result": {
+                    "title": "Result",
                     "type": "string",
-                    "enum": ["Positive", "Negative"]
+                    "enum": ["Reactive", "Non-Reactive"]
                 }
             }
         }

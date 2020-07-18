@@ -17,7 +17,12 @@
             "title": "Date of birth",
             "type": "string",
             "format": "date"
+        },
+        "testTimestamp": {
+            "title": "Test timestamp",
+            "type": "string",
+            "format": "date-time"
         }
     },
-    "required": ["fullName", "dateOfBirth"]
+    "required": ["fullName", "dateOfBirth", "testTimestamp"]
   }

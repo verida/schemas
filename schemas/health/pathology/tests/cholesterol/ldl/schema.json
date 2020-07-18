@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://schemas.verida.io/health/pathology/tests/cholesterol/ldl/schema.json",
+    "title": "Cholesterol (LDL) Test",
+    "titlePlural": "Cholesterol (HDL) Tests",
+    "type": "object",
+    "database": {
+        "name": "credential"
+    },
+    "layouts": {
+        "view": [
+            "fullName",
+            "dateOfBirth",
+            "testTimestap",
+            "result",
+            "acceptable"
+        ]
+    },
+    "allOf": [
+        {"$ref": "https://schemas.verida.io/base/schema.json"},
+        {"$ref": "https://schemas.verida.io/credential/base/schema.json"},
+        {"$ref": "https://schemas.verida.io/health/pathology/identifiable/schema.json"},
+        {
+            "properties": {
+                "result": {
+                    "title": "Result (mg/dL)",
+                    "type": "integer"
+                },
+                "acceptable": {
+                    "tilte": "Acceptable range?",
+                    "type": "string",
+                    "enum": ["Yes", "No"]
+                }
+            }
+        }
+    ]
+  }
