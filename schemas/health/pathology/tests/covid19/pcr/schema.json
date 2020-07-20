@@ -12,7 +12,7 @@
             "fullName",
             "dateOfBirth",
             "testTimestamp",
-            "testResult"
+            "result"
         ]
     },
     "allOf": [
