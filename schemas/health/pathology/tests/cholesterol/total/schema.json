@@ -11,7 +11,7 @@
         "view": [
             "fullName",
             "dateOfBirth",
-            "testTimestap",
+            "testTimestamp",
             "result",
             "acceptable"
         ]

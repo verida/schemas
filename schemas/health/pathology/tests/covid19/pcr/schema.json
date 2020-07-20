@@ -11,6 +11,7 @@
         "view": [
             "fullName",
             "dateOfBirth",
+            "testTimestamp",
             "testResult"
         ]
     },
