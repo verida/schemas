@@ -27,7 +27,7 @@
                     "type": "integer"
                 },
                 "acceptable": {
-                    "tilte": "Acceptable range?",
+                    "title": "Acceptable range?",
                     "type": "string",
                     "enum": ["Yes", "No"]
                 }
