@@ -18,6 +18,10 @@
             "type": "string",
             "format": "date"
         },
+        "patientId": {
+            "title": "Patient ID",
+            "type": "string"
+        },
         "testTimestamp": {
             "title": "Test timestamp",
             "type": "string",
