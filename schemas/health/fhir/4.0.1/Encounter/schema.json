@@ -3,6 +3,13 @@
     "$id": "https://schemas.verida.io/health/fhir/4.0.1/Encounter/schema.json",
     "title": "Encounter",
     "description": "A FHIR Encounter",
+    "layouts": {
+      "view": [
+        "status",
+        "serviceType",
+        "insertedAt"
+      ]
+    },
     "database": {
         "name": "health_encounter",
         "indexes": {
