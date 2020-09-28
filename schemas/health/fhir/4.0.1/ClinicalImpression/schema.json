@@ -4,7 +4,7 @@
     "title": "ClinicalImpression",
     "description": "A FHIR ClinicalImpression",
     "database": {
-        "name": "health_clinicial_impression"
+        "name": "health_clinical_impression"
     },
     "type": "object",
     "allOf": [
