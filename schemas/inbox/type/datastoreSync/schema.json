@@ -24,6 +24,11 @@
             },
             "encryptionKey": {
                 "$ref": "https://schemas.verida.io/security/key/symmetric/schema.json"
+            },
+            "dbName": {
+                "title": "External database",
+                "description": "Specify the database name (if not datastore default)",
+                "type": "string"
             }
         },
         "filter": {
