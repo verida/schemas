@@ -6,6 +6,17 @@
   "database": {
       "name": "health_patient"
   },
+  "layouts": {
+    "list": [
+        "name",
+        "generalPractioner"
+    ],
+    "view": [
+        "name",
+        "gender",
+        "generalPractioner"
+    ]
+  },
   "type": "object",
   "allOf": [
     {"$ref": "https://schemas.verida.io/health/fhir/4.0.1/base/schema.json"},
