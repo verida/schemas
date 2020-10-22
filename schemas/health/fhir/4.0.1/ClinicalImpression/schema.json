@@ -6,6 +6,16 @@
     "database": {
         "name": "health_clinical_impression"
     },
+    "layouts": {
+      "view": [
+        "summary",
+        "status",
+        "note.0.text",
+        "note.0.time",
+        "subject",
+        "encounter"
+      ]
+    },
     "type": "object",
     "allOf": [
         {"$ref": "https://schemas.verida.io/health/fhir/4.0.1/base/schema.json"},

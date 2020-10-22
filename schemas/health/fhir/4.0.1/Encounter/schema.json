@@ -4,10 +4,16 @@
     "title": "Encounter",
     "description": "A FHIR Encounter",
     "layouts": {
-      "view": [
+      "list": [
+        "serviceType.text",
         "status",
-        "serviceType",
-        "insertedAt"
+        "period.start"
+      ],
+      "view": [
+        "subject",
+        "period.start",
+        "serviceType.text",
+        "status"
       ]
     },
     "database": {
