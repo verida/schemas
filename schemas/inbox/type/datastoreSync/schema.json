@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "/inbox/type/datastoreSync/schema.json",
+    "$id": "https://schemas.verida.io/inbox/type/datastoreSync/schema.json",
     "title": "Data",
     "name": "inbox/type/datastoreSync",
     "description": "An inbox message requesting the syncronization of data from a source datastore to a destination datastore",

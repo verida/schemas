@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "/inbox/entry/schema.json",
+    "$id": "https://schemas.verida.io/inbox/entry/schema.json",
     "name": "inbox/entry",
     "title": "Message",
     "description": "Inbox entry for a user",
