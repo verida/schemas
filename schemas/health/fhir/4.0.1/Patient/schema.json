@@ -8,11 +8,11 @@
   },
   "layouts": {
     "list": [
-        "name",
+        "displayName",
         "generalPractioner"
     ],
     "view": [
-        "name",
+        "displayName",
         "gender",
         "generalPractioner"
     ]
