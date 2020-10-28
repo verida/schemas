@@ -4,7 +4,10 @@
   "title": "Patient",
   "description": "A FHIR Patient",
   "database": {
-      "name": "health_patient"
+      "name": "health_patient",
+      "indexes": {
+        "displayName": ["displayName"]
+      }
   },
   "layouts": {
     "list": [

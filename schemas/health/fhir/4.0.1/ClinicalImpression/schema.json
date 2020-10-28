@@ -4,7 +4,10 @@
     "title": "ClinicalImpression",
     "description": "A FHIR ClinicalImpression",
     "database": {
-        "name": "health_clinical_impression"
+        "name": "health_clinical_impression",
+        "indexes": {
+          "note.0.time": ["note.0.time"]
+        }
     },
     "layouts": {
       "view": [
