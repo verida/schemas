@@ -16,7 +16,8 @@
         "dateOfBirth": {
             "title": "Date of birth",
             "type": "string",
-            "format": "date"
+            "format": "date",
+            "description": "YYYY-MM-DD"
         },
         "patientId": {
             "title": "Patient ID",

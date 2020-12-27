@@ -1,16 +1,44 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "/identity/kyc/AU/basic/schema.json",
-    "name": "identity/kyc/AU/basic",
+    "$id": "https://schemas.verida.io/identity/kyc/AU/schema.json",
+    "name": "https://schemas.verida.io/identity/kyc/AU",
     "title": "Australia: Basic KYC",
     "type": "object",
-    "color": "#F8A934",
     "database": {
-        "name": "document"
+        "name": "credential"
+    },
+    "layouts": {
+        "view": [
+            "firstName",
+            "middleName",
+            "lastName",
+            "gender",
+            "dateOfBirth",
+            "streetAddress1",
+            "streetAddress2",
+            "suburb",
+            "state",
+            "postcode"
+        ],
+        "create": [
+            "firstName",
+            "middleName",
+            "lastName",
+            "gender",
+            "dateOfBirth",
+            "streetAddress1",
+            "streetAddress2",
+            "suburb",
+            "state",
+            "postcode"
+        ]
     },
     "allOf": [
         {
-            "$ref": "/base/schema.json"
+            "$ref": "https://schemas.verida.io/base/schema.json"
+        },
+        {
+            "$ref": "https://schemas.verida.io/credential/base/schema.json"
         },
         {
             "properties": {
@@ -43,7 +71,8 @@
                 "dateOfBirth": {
                     "title": "Date of birth",
                     "type": "string",
-                    "format": "date"
+                    "format": "date",
+                    "description": "ie: 1990-01-1"
                 },
                 "streetAddress1": {
                     "title": "Street address",
@@ -70,7 +99,6 @@
                 "firstName",
                 "lastName",
                 "gender",
-                "dateOfBirth",
                 "streetAddress1",
                 "suburb",
                 "state",

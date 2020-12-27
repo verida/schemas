@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "/shopping/coupon/schema.json",
-    "name": "shopping/coupon",
+    "$id": "https://schemas.verida.io/shopping/coupon/schema.json",
+    "name": "https://schemas.verida.io/shopping/coupon",
     "title": "Coupon",
     "titlePlural": "Coupons",
     "type": "object",
@@ -9,13 +9,33 @@
     "database": {
       "name": "shopping_coupon"
     },
+    "layouts": {
+      "create": [
+        "name",
+        "description",
+        "value",
+        "valueType",
+        "currency",
+        "barcode"
+      ],
+      "view": [
+        "name",
+        "description",
+        "value",
+        "valueType",
+        "currency",
+        "barcode"
+      ]
+    },
     "allOf": [
-      {"$ref": "/base/schema.json"},
+      {
+        "$ref": "https://schemas.verida.io/base/schema.json"
+      },
       {
         "properties": {
           "description": {
-            "title": "Description",
-            "description": "Unit price * Quantity"
+            "title": "summary",
+            "summary": "Explain this coupon"
           },
           "value": {
               "title": "Value",
@@ -32,7 +52,12 @@
           },
           "currency": {
               "title": "Currency",
-              "type": "string"
+              "type": "string",
+              "enum": [
+                "AUD",
+                "USD",
+                "SGD"
+              ]
           },
           "barcode": {
               "title": "Barcode",

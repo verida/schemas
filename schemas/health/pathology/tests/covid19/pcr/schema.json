@@ -8,6 +8,12 @@
         "name": "credential"
     },
     "layouts": {
+        "create": [
+            "fullName",
+            "dateOfBirth",
+            "patientId",
+            "result"
+        ],
         "view": [
             "fullName",
             "dateOfBirth",
