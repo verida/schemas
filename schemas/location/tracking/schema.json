@@ -21,16 +21,40 @@
                     "type": "number"
                 },
                 "longitude": {
-                    "title": "Latitude",
+                    "title": "Longitude",
                     "type": "number"
+                },
+                "locationAccuracy": {
+                    "title": "Location accuracy",
+                    "type": "integer"
                 },
                 "altitude": {
                     "title": "Altitude",
                     "type": "number"
                 },
+                "altitudeAccuracy": {
+                    "title": "Altitude accuracy",
+                    "type": "integer"
+                },
                 "isMoving": {
                     "title": "Moving?",
                     "type": "boolean"
+                },
+                "speed": {
+                    "title": "Speed",
+                    "type": "number"
+                },
+                "speedAccuracy": {
+                    "title": "Speed accuracy",
+                    "type": "integer"
+                },
+                "heading": {
+                    "title": "Heading",
+                    "type": "number"
+                },
+                "headingAccuracy": {
+                    "title": "Heading accuracy",
+                    "type": "integer"
                 },
                 "activityType": {
                     "title": "Activity type",
