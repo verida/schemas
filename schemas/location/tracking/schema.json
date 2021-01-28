@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://schemas.verida.io/location/tracking/schema.json",
+    "name": "location/tracking",
+    "title": "Location",
+    "description": "Location tracking data",
+    "type": "object",
+    "database": {
+        "name": "location_tracking",
+        "indexes": {
+            "location": ["latitude", "longitude", "timestamp"],
+            "timestamp": ["timestamp"]
+        }
+    },
+    "allOf": [
+        {"$ref": "/base/schema.json"},
+        {
+            "properties": {
+                "latitude": {
+                    "title": "Latitude",
+                    "type": "number"
+                },
+                "longitude": {
+                    "title": "Latitude",
+                    "type": "number"
+                },
+                "altitude": {
+                    "title": "Altitude",
+                    "type": "number"
+                },
+                "isMoving": {
+                    "title": "Moving?",
+                    "type": "boolean"
+                },
+                "activityType": {
+                    "title": "Activity type",
+                    "type": "string"
+                },
+                "timestamp": {
+                    "title": "Timetstamp",
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": ["latitude", "longitude", "timestamp"]
+        }
+    ]
+  }
