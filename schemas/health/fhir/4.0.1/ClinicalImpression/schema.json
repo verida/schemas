@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "https://schemas.verida.io/health/fhir/4.0.1/ClinicalImpression/schema.json",
-    "title": "ClinicalImpression",
-    "description": "A FHIR ClinicalImpression",
+    "title": "Clinical Impression",
+    "description": "A FHIR Clinical Impression",
     "database": {
         "name": "health_clinical_impression",
         "indexes": {

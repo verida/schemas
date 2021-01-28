@@ -3,6 +3,7 @@
     "$id": "https://schemas.verida.io/location/tracking/schema.json",
     "name": "location/tracking",
     "title": "Location",
+    "titlePlural": "Location Tracking",
     "description": "Location tracking data",
     "type": "object",
     "database": {
@@ -11,6 +12,34 @@
             "location": ["latitude", "longitude", "timestamp"],
             "timestamp": ["timestamp"]
         }
+    },
+    "appearance": {
+        "style": {
+            "color": "#FF886E",
+            "icon": "/location/tracking/icon.svg"
+        }
+    },
+    "layouts": {
+        "list": [
+            "timestamp",
+            "latitude",
+            "longitude",
+            "activityType"
+        ],
+        "view": [
+            "timestamp",
+            "latitude",
+            "longitude",
+            "locationAccuracy",
+            "altitude",
+            "altitudeAccuracy",
+            "isMoving",
+            "speed",
+            "speedAccuracy",
+            "heading",
+            "headingAccuracy",
+            "activityType"
+        ]
     },
     "allOf": [
         {"$ref": "/base/schema.json"},
