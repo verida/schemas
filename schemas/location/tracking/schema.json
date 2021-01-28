@@ -26,7 +26,7 @@
                 },
                 "locationAccuracy": {
                     "title": "Location accuracy",
-                    "type": "integer"
+                    "type": "number"
                 },
                 "altitude": {
                     "title": "Altitude",
@@ -34,7 +34,7 @@
                 },
                 "altitudeAccuracy": {
                     "title": "Altitude accuracy",
-                    "type": "integer"
+                    "type": "number"
                 },
                 "isMoving": {
                     "title": "Moving?",
@@ -46,7 +46,7 @@
                 },
                 "speedAccuracy": {
                     "title": "Speed accuracy",
-                    "type": "integer"
+                    "type": "number"
                 },
                 "heading": {
                     "title": "Heading",
@@ -54,7 +54,7 @@
                 },
                 "headingAccuracy": {
                     "title": "Heading accuracy",
-                    "type": "integer"
+                    "type": "number"
                 },
                 "activityType": {
                     "title": "Activity type",
