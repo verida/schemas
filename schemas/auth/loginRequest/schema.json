@@ -1,0 +1,73 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://schemas.verida.io/auth/loginRequest/schema.json",
+    "title": "Login request",
+    "titlePlural": "Login requests",
+    "name": "auth/loginRequest",
+    "description": "An inbox message requesting the user login to an application context",
+    "type": "object",
+    "database": {
+        "name": "auth_loginRequest",
+        "indexes": {
+            "context": ["context"],
+            "inserted": ["inserted"]
+        }
+    },
+    "appearance": {
+        "style": {
+            "color": "#C4C02"
+        }
+    },
+    "layouts": {
+        "list": [
+            "context",
+            "loginDomain",
+            "inserted",
+            "approved"
+        ],
+        "view": [
+            "context",
+            "loginDomain",
+            "inserted",
+            "approved",
+            "sessionId",
+            "authUri",
+            "expiry"
+        ]
+    },
+    "allOf": [
+        {"$ref": "/base/schema.json"},
+        {
+            "properties": {
+                "sessionId": {
+                    "title": "Session ID",
+                    "type": "string"
+                },
+                "context": {
+                    "title": "Application context",
+                    "description": "Application context to unlock",
+                    "type": "string"
+                },
+                "authUri": {
+                    "title": "Auth URI",
+                    "type": "string"
+                },
+                "loginDomain": {
+                    "title": "Login domain",
+                    "type": "string"
+                },
+                "expiry": {
+                    "title": "Expiry",
+                    "description": "Unix timestamp when this login request expires",
+                    "type": "integer"
+                },
+                "approved": {
+                    "title": "Approved",
+                    "type": "boolean",
+                    "default": false
+                }
+            },
+            "required": ["sessionId", "context", "authUri", "loginDomain", "expiry"]
+        }
+    ]
+}
