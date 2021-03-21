@@ -10,7 +10,7 @@
         "name": "auth_loginRequest",
         "indexes": {
             "context": ["context"],
-            "inserted": ["inserted"]
+            "insertedAt": ["insertedAt"]
         }
     },
     "appearance": {
@@ -22,13 +22,13 @@
         "list": [
             "context",
             "loginDomain",
-            "inserted",
+            "insertedAt",
             "approved"
         ],
         "view": [
             "context",
             "loginDomain",
-            "inserted",
+            "insertedAt",
             "approved",
             "sessionId",
             "authUri",
