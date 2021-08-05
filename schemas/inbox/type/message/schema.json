@@ -17,6 +17,20 @@
                     "title": "Message",
                     "type": "string"
                 },
+                "link": {
+                    "type": "object",
+                    "description": "Optional link that user can click on for more information",
+                    "properties": {
+                        "url": {
+                            "title": "URL",
+                            "type": "string"
+                        },
+                        "text": {
+                            "title": "Text",
+                            "type": "string"
+                        }
+                    }
+                },
                 "replyId": {
                     "title": "Reply ID",
                     "type": "string",
