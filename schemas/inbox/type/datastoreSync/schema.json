@@ -17,9 +17,9 @@
                 "description": "DID of the database owner",
                 "type": "string"
             },
-            "appName": {
-                "title": "Destination application name",
-                "description": "Name of the application to sync to",
+            "context": {
+                "title": "Destination context name",
+                "description": "Name of the context to sync to",
                 "type": "string"
             },
             "encryptionKey": {
