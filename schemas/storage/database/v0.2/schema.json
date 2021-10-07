@@ -19,8 +19,12 @@
                     "title": "DID that owns the database",
                     "type": "string"
                 },
-                "applicationName": {
-                    "title": "Application name",
+                "endpointType": {
+                    "title": "Type of secure context endpoint",
+                    "type": "string"
+                },
+                "contextName": {
+                    "title": "Context name",
                     "type": "string"
                 },
                 "permissions": {
@@ -34,5 +38,5 @@
             }
         }
     ],
-    "required": ["dbName", "did", "applicationName", "permissions"]
+    "required": ["dbName", "did", "contextName", "endpointType", "permissions"]
   }
