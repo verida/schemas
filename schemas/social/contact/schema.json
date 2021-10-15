@@ -17,16 +17,18 @@
     },
     "layouts": {
         "create": [
-            "fullName",
-            "dateOfBirth",
-            "patientId",
-            "result"
+            "firstName",
+            "lastName",
+            "email",
+            "mobile",
+            "did"
         ],
         "view": [
-            "fullName",
-            "dateOfBirth",
-            "testTimestamp",
-            "result"
+            "firstName",
+            "lastName",
+            "email",
+            "mobile",
+            "did"
         ]
     },
     "allOf": [
