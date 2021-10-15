@@ -15,6 +15,22 @@
             "name": ["lastName", "firstName"]
         }
     },
+    "layouts": {
+        "create": [
+            "firstName",
+            "lastName",
+            "email",
+            "mobile",
+            "did"
+        ],
+        "view": [
+            "firstName",
+            "lastName",
+            "email",
+            "mobile",
+            "did"
+        ]
+    },
     "allOf": [
         {"$ref": "/base/schema.json"},
         {
