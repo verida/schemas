@@ -1,4 +1,12 @@
 
+# Deprecated!
+
+This repo has been split:
+
+- [schemas-core](https://github.com/verida/schemas-core)
+- [schemas-common](https://github.com/verida/schemas-common)
+- [schemas-vault](https://github.com/verida/schemas-vault)
+
 # Welcome to Verida Schemas
 
 This is a repo containing all the public base schemas supported by Verida Datastore.
