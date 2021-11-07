@@ -1,12 +1,17 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "/social/contact/schema.json",
+    "$id": "https://schemas.verida.io/social/contact/schema.json",
     "name": "social/contact",
     "title": "Contact",
     "titlePlural": "Contacts",
     "description": "A record of a contact",
     "type": "object",
-    "color": "#FD4F64",
+    "appearance": {
+        "style": {
+            "color": "#FD4F64",
+            "icon": "https://schemas.verida.io/social/contact/icon.svg"
+        }
+    },
     "database": {
         "name": "social_contact",
         "indexes": {
@@ -14,6 +19,22 @@
             "did": ["did"],
             "name": ["lastName", "firstName"]
         }
+    },
+    "layouts": {
+        "create": [
+            "firstName",
+            "lastName",
+            "email",
+            "mobile",
+            "did"
+        ],
+        "view": [
+            "firstName",
+            "lastName",
+            "email",
+            "mobile",
+            "did"
+        ]
     },
     "allOf": [
         {"$ref": "/base/schema.json"},
